@@ -18,9 +18,6 @@
 <body>
  <div id="navbar-full">
     <div id="navbar">
-    <!--    
-        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange  
-        -->
         <nav class="navbar navbar-ct-red navbar-transparent navbar-fixed-top" role="navigation">
           <div class="alert alert-success hidden">
             <div class="container">
@@ -64,7 +61,7 @@
        <h1 class="text-center">Save the Thunderbox<br>
          <small></small>
           <small class="subtitle">rettet auch ihr Scheißhaus</small></h1>
-       <p>Wir haben zwar noch kein Album, aber schon ordentlich was weggesoffen!</p>
+       <p>"Wir haben zwar noch kein Album, aber schon ordentlich was weggesoffen!"</p>
        <video width="100%" controls="controls">
         <source src="video/trailer.webm" type="video/webm">
         <source src="video/trailer.mp4" type="video/mp4">
@@ -124,22 +121,6 @@
                   </div>
                 </div>
               </div>
-              <!--
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-target="#Auftritt2" href="#Auftritt2" data-toggle="gsdk-collapse">
-                      Oralverkehr mit Sina
-                    </a>
-                  </h4>
-                </div>
-                <div id="Auftritt2" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    To come...
-                  </div>
-                </div>
-              </div>
-              -->
             </div>
             
         </div><!--  end acordeon -->
@@ -150,10 +131,6 @@
     <div class="space"></div>
 
 <div id="carousel">
-    <!--    
-            IMPORTANT - This carousel can have a special class for a smooth transition "gsdk-transition". Since javascript cannot be overwritten, if you want to use it, you can use the bootstrap.js or bootstrap.min.js from the GSDKit or you can open your bootstrap.js file, search for "emulateTransitionEnd(600)" and change it with "emulateTransitionEnd(1200)"     
-            
-    -->
     <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -202,37 +179,4 @@
   
     <script src="assets/js/custom.js"></script>
 
-<script type="text/javascript">
-         
-    $('.btn-tooltip').tooltip();
-    $('.label-tooltip').tooltip();
-    $('.pick-class-label').click(function(){
-        var new_class = $(this).attr('new-class');  
-        var old_class = $('#display-buttons').attr('data-class');
-        var display_div = $('#display-buttons');
-        if(display_div.length) {
-        var display_buttons = display_div.find('.btn');
-        display_buttons.removeClass(old_class);
-        display_buttons.addClass(new_class);
-        display_div.attr('data-class', new_class);
-        }
-    });
-    $( "#slider-range" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 75, 300 ],
-  });
-  $( "#slider-default" ).slider({
-      value: 70,
-      orientation: "horizontal",
-      range: "min",
-      animate: true
-  });
-  $('.carousel').carousel({
-      interval: 4000
-    });
-      
-    
-</script>
 </html>
